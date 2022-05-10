@@ -4,11 +4,9 @@
   
 ### Frontend
 * run command "npm install" to install dependencies
-* run command "npm build" to build vue project
-* run command "npm components-testing" to run component testing
+* run command "npm run serve" to Compile Frontend
   
 ### Backend
 * run command "npm install" to install dependencies
-* run command "npm run unit_testing" for unit testing
-* run command "npm run component_testing" for component testing
+* run command "npm run start" to Compile Api/Server
 
