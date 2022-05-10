@@ -8,6 +8,6 @@
   
 ### Backend
 * run command "npm install" to install dependencies
-* cd vuecrudapp
+* cd vuecrudapi
 * run command "npm run start" to Compile Api/Server
 
