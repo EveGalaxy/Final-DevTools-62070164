@@ -1,22 +1,22 @@
 <template>
   <div>
-    <h1>Show task</h1>
+    <h1>Show info</h1>
     <flash-message></flash-message>
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="tasks icon"></i>  Task
+      <i class="user icon"></i>  Name
       </div>
       <input type="text" readonly  :value="task.task1"/>
     </div>
      <div class="ui labeled input fluid">
       <div class="ui label">
-        <i class="info circle icon"></i> Details
+        <i class="phone icon"></i> Call
       </div>
       <input type="text" readonly  :value="task.task2"/>
     </div>
     <div class="actions">
       <router-link :to="{ name: 'edit', params: { id: this.$route.params.id }}">
-        Edit task
+        Edit
       </router-link>
     </div>
   </div>

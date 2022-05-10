@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>New task</h1>
+    <h1>Register</h1>
     <task-form @createOrUpdate="createOrUpdate"></task-form>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   methods: {
     createOrUpdate: async function(task) {
       const res = await api.createtask(task);
-      this.flash('task created', 'success');
+      this.flash('Add Member', 'success');
       this.$router.push(`/tasks/${res._id}`);
     }
   }

@@ -1,0 +1,26 @@
+version: '3.9'
+services:
+  back-end:
+    build: "./backend/vuecrudapi"
+    ports:
+      - 3083:3083
+  front-end:
+    build: "./frontend"
+    ports: 
+      - "9100:9000"
+
+  mongo:
+      image: mongo
+      restart: always
+      environment:
+        MONGO_INITDB_ROOT_USERNAME: root
+        MONGO_INITDB_ROOT_PASSWORD: example
+
+  mongo-express:
+      image: mongo-express
+      restart: always
+      ports:
+        - 8081:8081
+      environment:
+        ME_CONFIG_MONGODB_ADMINUSERNAME: root
+        ME_CONFIG_MONGODB_ADMINPASSWORD: example

@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1>Tasks</h1>
+    <h1>List of Member</h1>
     <flash-message></flash-message>
     <div v-if="tasks.length > 0">
     <table id="tasks" class="ui celled compact table">
       <thead>
         <tr>
-            <th><i class="calendar plus icon"></i>Task</th>
-            <th><i class="info circle icon"></i>Detail</th>
+            <th><i class="user icon"></i>Name</th>
+            <th><i class="phone icon"></i>Phone Number</th>
             <th><i class="lock open icon"></i></th>
             <th><i class="edit icon"></i></th>
             <th><i class="trash icon"></i></th>
@@ -29,7 +29,7 @@
     </table>
     </div>
     <div v-else>
-        You don't have any tasks!.
+        You don't have register yet!.
     </div>
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
       const sure = window.confirm('Are you sure?');
       if (!sure) return;
       await api.deletetask(id);
-      this.flash('task deleted sucessfully!', 'success');
+      this.flash('deleted sucessfully!', 'success');
       const newtasks = this.tasks.filter(task => task._id !== id);
       this.tasks = newtasks;
     }

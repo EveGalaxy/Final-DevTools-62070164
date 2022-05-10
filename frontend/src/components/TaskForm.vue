@@ -3,15 +3,15 @@
     <p v-if="errorsPresent" class="error">Please fill out both fields!</p>
     <div class="ui labeled input fluid">
       <div class="ui label">
-        <i class="calendar plus icon"></i>task
+        <i class="user icon"></i>Name
       </div>
-      <input type="text" placeholder="Enter task..." v-model="task.task1" />
+      <input type="text" placeholder="Enter your name ..." v-model="task.task1" />
     </div>
     <div class="ui labeled input fluid">
       <div class="ui label">
-   <i class="info circle icon"></i> Details
+   <i class="phone icon"></i> Call
       </div>
-      <input type="text" placeholder="Enter Details" v-model="task.task2" />
+      <input type="text" placeholder="Enter Phone number ..." v-model="task.task2" />
     </div>
     <button class="positive ui button">Submit</button>
   </form>

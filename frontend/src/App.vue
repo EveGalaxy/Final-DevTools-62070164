@@ -1,13 +1,14 @@
 <template>
   <div id="app">
     <div class="ui inverted segment navbar">
-      <div class="ui center aligned container">
+      <div class="ui container">
+        <h1>Register for the 4th vaccination</h1>
         <div class="ui large secondary inverted pointing menu compact">
           <router-link to="/tasks" exact class="item">
-           <i class="tasks icon"></i> Tasks
+           <i class="tasks icon"></i> List 
           </router-link>
           <router-link to="/tasks/new" class="item">
-            <i class="plus circle icon"></i> New
+            <i class="plus circle icon"></i> Register
           </router-link>
       
         </div>
@@ -30,6 +31,7 @@ export default {
 <style>
 #app > div.navbar {
   margin-bottom: 1.5em;
+  background-color: rgb(38, 151, 226);
 }
 .myFlash {
   width: 250px;
